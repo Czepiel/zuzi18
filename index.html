@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18 urodziny - Dla mojej dziewczyny</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<header>
+    <h1>18 urodziny, kochanie!</h1>
+    <p>KOCHAM CIĘ BARDZO &lt;33 Tęsknię! 😢😢</p>
+    <div class="heart" style="top:10%; left:15%;">❤</div>
+    <div class="heart" style="top:30%; left:70%;">❤</div>
+    <div class="heart" style="top:60%; left:40%;">❤</div>
+    <div class="heart" style="top:80%; left:80%;">❤</div>
+</header>
+
+<div class="envelope-btn-container">
+    <button class="open-envelope-btn" onclick="openEnvelope()">Koperta OTWÓRZ</button>
+</div>
+
+<div class="wish-envelope" id="wishEnvelope">
+    <span class="close-btn" onclick="closeEnvelope()">✖</span>
+    Wszystkiego najlepszego z okazji 18 urodzin, kochanie! Niech każdy Twój dzień będzie pełen radości, uśmiechu i niezapomnianych chwil. Kocham Cię bardzo! ❤️
+</div>
+
+<div class="countdown-section">
+    <h2>Odliczanie do powrotu! (Nie umiem się doczekać kiedy cię zobaczę)</h2>
+    <div class="countdown" id="countdown">
+        <div class="countdown-item">
+            <span class="count" id="days">0</span>
+            <span class="label">Dni</span>
+        </div>
+        <div class="countdown-item">
+            <span class="count" id="hours">0</span>
+            <span class="label">Godz</span>
+        </div>
+        <div class="countdown-item">
+            <span class="count" id="minutes">0</span>
+            <span class="label">Min</span>
+        </div>
+        <div class="countdown-item">
+            <span class="count" id="seconds">0</span>
+            <span class="label">Sek</span>
+        </div>
+    </div>
+</div>
+
+<div class="memories-section">
+    <h2>Nasze wspomnienia</h2>
+    <div class="memories-container">
+        <div class="memory-block">
+            <img src="zdj1.jpg" alt="Pierwsza podróż">
+            <div class="memory-description">Nasza pierwsza podróż (Twoje leżenie w śniegu XD)</div>
+        </div>
+        <div class="memory-block">
+            <img src="zdj2.jpg" alt="Romantyczny spacer">
+            <div class="memory-description">Romantyczny spacjer z eskimosem</div>
+        </div>
+        <div class="memory-block">
+            <img src="zdj3.jpg" alt="Wspólne gotowanie">
+            <div class="memory-description">Zuzia i pogromca węży </div>
+        </div>
+    </div>
+</div>
+
+<div class="birthday-quiz-section">
+    <h2>Quiz o Dorosłości</h2>
+    <div class="quiz-container">
+        <div class="quiz-question" id="quizQuestion"></div>
+        <div class="quiz-options" id="quizOptions"></div>
+        <button class="quiz-btn" id="quizBtn">Następne pytanie</button>
+        <div id="quizScore"></div>
+    </div>
+</div>
+
+<div class="love-section">
+    <h2>Miłościomierz 💖</h2>
+    <button class="love-btn" onclick="fillLove()">Sprawdź naszą miłość!</button>
+    <div class="love-bar-container" id="loveBarContainer">
+        <div id="lovePercent">0%</div>
+        <div class="love-bar" id="loveBar"></div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 18 Zuzi <i class="fas fa-heart"></i></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
